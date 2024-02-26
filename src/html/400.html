@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> meta/head title="400 - Bad Request || Autolinx"}}
+  </head>
+
+  <body class="bg-black">
+    <!-- navbar -->
+    {{> navbar/navbar logo="/assets/images/logo/logo-light.png" class="navbar-sticky navbar-dark" }}
+
+    <!-- 400 -->
+    <section class="inverted">
+      <div class="d-flex flex-column container min-vh-100 py-20">
+        <div class="row align-items-center justify-content-center justify-content-lg-between my-auto">
+          <div class="col-6">
+            <h1 class="display-2">Error 400</h1>
+            <span class="fs-3 fw-bold text-white">A syntax error was detected.</span><br /><br />
+            <a href="/" class="btn btn-rounded btn-outline-white rounded-pill">Go back to homepage</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- javascript -->
+    {{> meta/scripts}}
+  </body>
+</html>

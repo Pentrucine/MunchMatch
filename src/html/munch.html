@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> meta/head title="MunchMatch - Menu" }}
+  </head>
+
+  <body>
+    {{> navbar/navbar logo="/assets/images/logo/logo-light.png" class="navbar-sticky navbar-dark" }}
+    <body>
+    <div class="offcanvas-wrap">
+      <!-- Hero -->
+      <section class="bg-black inverted overflow-hidden">
+        <figure class="background background-overlay background-parallax" style="background-image: url('/assets/images/background.png');" data-bottom-top="transform: translateY(0%);" data-top-bottom="transform: translateY(30%);"></figure>
+        <div class="container py-20 d-flex flex-column min-vh-100 foreground">
+          <div class="row my-auto justify-content-center">
+            <div id="c1" class="col-lg-7">
+              <div class="bintobox">
+                <div class="carousel">
+                  <div data-carousel='{"mouseDrag": true, "gutter": 30, "loop": true, "items": 1, "nav": false, "responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 2}, "1200": {"items": 3}}}'>
+                    <div>
+                      <figure class="d-flex flex-column align-items-center">
+                        <div class="equal-1-1 bg-image" style="background-image: url('/assets/images/binto/CafeLogo.png'); width: 100px; height: 100px;"></div>
+                        <figcaption class="mt-2">Cafes</figcaption>
+                      </figure>
+                    </div>
+                    <div>
+                      <figure class="d-flex flex-column align-items-center">
+                        <div class="equal-1-1 bg-image" style="background-image: url('/assets/images/binto/ChinLogo.png'); width: 100px; height: 100px;"></div>
+                        <figcaption class="mt-2">Chinese</figcaption>
+                      </figure>
+                    </div>
+                    <div>
+                      <figure class="d-flex flex-column align-items-center">
+                        <div class="equal-1-1 bg-image" style="background-image: url('/assets/images/binto/GreekLogo.png'); width: 100px; height: 100px;"></div>
+                        <figcaption class="mt-2">Greek</figcaption>
+                      </figure>
+                    </div>
+                    <div>
+                      <figure class="d-flex flex-column align-items-center">
+                        <div class="equal-1-1 bg-image" style="background-image: url('/assets/images/binto/ItalianLogo.png'); width: 100px; height: 100px;"></div>
+                        <figcaption class="mt-2">Italian</figcaption>
+                      </figure>
+                    </div>
+                    <div>
+                      <figure class="d-flex flex-column align-items-center">
+                        <div class="equal-1-1 bg-image" style="background-image: url('/assets/images/binto/JapaneseLogo.png'); width: 100px; height: 100px;"></div>
+                        <figcaption class="mt-2">Japanese</figcaption>
+                      </figure>
+                    </div>
+                    <div>
+                      <figure class="d-flex flex-column align-items-center">
+                        <div class="equal-1-1 bg-image" style="background-image: url('/assets/images/binto/MexicanLogo.png'); width: 100px; height: 100px;"></div>
+                        <figcaption class="mt-2">Mexican</figcaption>
+                      </figure>
+                    </div>
+                    <div>
+                      <figure class="d-flex flex-column align-items-center">
+                        <div class="equal-1-1 bg-image" style="background-image: url('/assets/images/binto/VietLogo.png'); width: 100px; height: 100px;"></div>
+                        <figcaption class="mt-2">Vietnamese</figcaption>
+                      </figure>
+                    </div>
+                    <div>
+                      <figure class="d-flex flex-column align-items-center">
+                        <div class="equal-1-1 bg-image" style="background-image: url('/assets/images/binto/TaiwanLogo.png'); width: 100px; height: 100px;"></div>
+                        <figcaption class="mt-2">Taiwanese</figcaption>
+                      </figure>
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div id="ca1" class="col-lg-6 restaurants-list">
+                  <h3 class="text-center">Munchables</h3>
+                  <!-- Content that may cause horizontal overflow -->
+                </div>
+                <div id="ca2" class="col-lg-6 friends-list">
+                  <h3 class="text-center">MunchBunch</h3>
+                  <!-- More content -->
+                </div>
+              </div>
+            </div>
+            <div id="c2" class="col-lg-5">
+        <iframe
+  width="500"
+  height="1000"
+  style="border:0"
+  loading="lazy"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBnR0LaPukvYEEF2dqXD3VegboYZQJ-uZY&q=Bellagio+Vegas">
+</iframe>
+            </div>
+          </div>
+        </div>
+        <span class="scroll-down"></span>
+      </section>
+      <!-- footer -->
+      {{> footer/footer-1 logo="/assets/images/logo/logo.png" class="py-5 py-xl-10 bg-black inverted border-top" }}
+    </div>
+
+    <!-- javascript -->
+    {{> meta/scripts}}
+  </body>
+</html>

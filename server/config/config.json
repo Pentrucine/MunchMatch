@@ -1,0 +1,107 @@
+{
+  "webserver": {
+    "port": 8080,
+    "deniedInputs": ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "=", "+", "{", "}", "[", "]", "'", "&quots", ";", ":", "\\", "|", "?", "<", ">", "eval", "."],
+    "rateLimiter": {
+      "api": {
+        "windowMs": 10000,
+        "max": 20
+      }
+    }
+  },
+  "database": {
+    "aam": {
+      "auth": {
+        "host": "mysql.jatemack.com"
+      },
+      "storedQueries": {
+        "highlight": {
+          "primary": "SELECT * FROM vehicles WHERE ve_cu_id = 91 AND ve_ca_id != 0 AND ve_img_highlight IS NOT NULL AND ve_img_highlight != '' ORDER BY RAND() LIMIT 1",
+          "sold": "SELECT * FROM (SELECT * FROM vehicles WHERE ve_cu_id = 91 AND ve_img_highlight IS NOT NULL AND ve_img_highlight != '' AND ve_date_sold IS NOT NULL ORDER BY ve_date_sold DESC LIMIT 5) AS cars ORDER BY RAND() LIMIT 1",
+          "bestInInventory": "SELECT * FROM vehicles WHERE ve_cu_id = 91 AND ve_ca_id != 0 ORDER BY ve_price DESC LIMIT 1"
+        }
+      }
+    }
+  },
+  "recaptcha": {
+    "client_email": "autolinx@autolinx-webapp-372901.iam.gserviceaccount.com",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCTnbhX+o7PhMS1\nNTUv1jobKaYPYhUDTjLmeIqXSkOklsDV9y4AQ/6yOKeri7i6BBzHfHvc17Aj1x1r\nIBA+PSUfjagXyVTvldDVWY1X9YetcjlDc3km8K54Dq/NhfEKNMmbnP+Aa2SRPuDL\nHVYWRS5Wf8Xdcou/HY0bJYHoVHhmk65DugcnCh7FMdNDoW2JHmaB02lbIviborMA\n5Whll6LB6dg9FV/3v2R2jkpzoKszZyMQv9G9VzH6dFTsOGmz4iOTE1MKW4SSyI0f\n4zLuuw562efezlEwIF1gFxtFVLsiaQ5M+CIqgdhiEoKy/qtGZaYG/H1dEpD5E1oP\nHAoIAOdTAgMBAAECggEAGdy2IWPahW0DcaQCz4C+6Wdgmq1adRvMOyi/T0ZJl5p5\n6oLF4nIHO35Fkf6GvMBfsmuS39xCFeVoWA5kCiN4T5Dn9FLnuJoM3nQ0GUcBIFg0\nxCaFAVeFma8pCd7/ngQllkfpU7x9AB1+ENfw7zHrrmfwaJ3a8f7ha/IkUmoKNh5B\nVfoMN1fxPKLJzBUo4xyxzvZv2L8xySlkH3Cuy7F+MMIEIj6yb0wvjGufIbueeyYE\nvK10RIgxfoV4EzErVESqbUbC3ZfqD4WJf7Uj6ZkBbiPRRDQyaydtnCn1o6ra5qFu\nPr+ZSbOh4JxlSUwvV1IeYKVAxqKOwZ+8ZhIcM2mjkQKBgQDPRpHtS8CHRY3KLZuw\n90EJQJ+99b96IkJ56E5ElmJjS2dJGL27rPyjYZwJ8J4TsrckegfIIq3JrB99iQ22\n3jo3aI4ItFitF0zq5u+I92vIMzW0OPbVHjbpI/mT5oVNHSzHw/Gb/hgrslITNmzB\nJEpUSO9N/GX29GshcD2lK7ovnwKBgQC2UPU3vxoiKlYrRLA7pkwFGtj/M6VYBz1p\nuhU9TrBSuIuizQ7l13pRluePXS4E6cdRg3N6sEdCyd+B+tbmQtxYv24OFbzAZYIf\nDQ8630EduHmKd5FUCo7ITIjdcLmcoUxl7HfUlLyI9pn/+FLCPB2ZpshwFRs/LmJB\nrU4W+D0bzQKBgFqYqM3ET3mQsCHPf36BA98sbOXVlQSoFtA79oHKDWUDHzj25G80\ndBRhZJd/oUhQ0/XQlLgoWDeO0RDIp8LnLSDsxTAOy7eUOJ1vpQEDzAtsPqvwPgr2\nst+CRuMbXeZPuzPxdBhPnnby8SbOoghleUuPuXEnwdWIDY9HBNq92xpXAoGAegQi\nqYV/YwA8nUaiP7mjRQNb2Shib1ChHGJKlrZUMXiLE5DzeIXGulYpcXxmMSmYmQhF\nwAW8G4npyR7stjxnJgowCMMpiQYmmMtvtvH1rYNp7G7rV3idaJY4PyOTRa156Pji\nleZZa7zHAlXaZV5AXTYPDVxC2P0dC2GGUr8efr0CgYAqjy/C66gaIjvmi7+A58Iv\nBvduwcCCdXTfc9CiEjGvY3tVSEdYhS53+Xm/9XJMDpAj5Ap8bhNa2lQ29Y3PHMGx\n1abnHIs+oD7QyVZr7d+F1aZnnCUyJinm/H2jFh7D6U8K/pVoWb6F3RngexLH/qlc\n4+vB3rto/NfRIn5HsmFE0g==\n-----END PRIVATE KEY-----\n",
+    "projectId": "autolinx-webapp-372901",
+    "recaptchaSiteKey": "6LeA6v8jAAAAAEuf13fqrQQEhXFHfxzdr4Hs83eb",
+    "acceptanceMinimum": 0.5
+  },
+  "mailserver": {
+    "host": "smtp.office365.com",
+    "port": 587,
+    "auth": {
+      "user": "info@autolinx.com",
+      "pass": "RZ1j9mH0%MP1Lb%71bhyQNB8fgPfo7EujSBdBWx9vbh9j0nG5I"
+    }
+  },
+  "website": {
+    "inventory": {
+      "highlightdefault": "/assets/images/highlightdefault.jpg",
+      "content": {
+        "makes": ["Audi", "BMW", "Chevrolet", "Jeep", "Mercedes-Benz", "Porsche", "Ram"],
+        "models": ["Corvette"]
+      }
+    },
+    "staff": {
+      "e.murad": {
+        "firstName": "Ed",
+        "lastName": "Murad",
+        "email": "e.murad@autolinx.com",
+        "photo": "src/images/aboutus/staff/ed_murad.jpg",
+        "title": "Founder | CEO"
+      },
+      "s.maalouf": {
+        "firstName": "Sandy",
+        "lastName": "Maalouf",
+        "email": "s.maalouf@autolinx.com",
+        "photo": "src/images/aboutus/staff/sandy_maalouf.jpg",
+        "title": "Co-Founder | Business Development"
+      },
+      "m.gheith": {
+        "firstName": "Maher",
+        "lastName": "Gheith",
+        "nickname": "Mike",
+        "email": "m.gheith@autolinx.com",
+        "photo": "src/images/aboutus/staff/mike_gheith.jpg",
+        "title": "Sales Manager"
+      },
+      "a.sim": {
+        "firstName": "Amareth",
+        "lastName": "Sim",
+        "nickname": "Ami",
+        "email": "a.sim@autolinx.com",
+        "workPhone": "7075630396",
+        "workFax": "7076525484",
+        "photo": "src/images/aboutus/staff/amareth_sim.jpg",
+        "title": "Office Manager",
+        "note": "Hello! My direct line is listed above, followed by the company phone number and fax number. Please feel free to call at anytime and leave a message if I'm not available."
+      },
+      "n.murad": {
+        "firstName": "Naji",
+        "lastName": "Murad",
+        "email": "n.murad@autolinx.com",
+        "photo": "src/images/aboutus/staff/naji_murad.jpg",
+        "title": "IT Director"
+      },
+      "r.nasr": {
+        "firstName": "Rami",
+        "lastName": "Nasr",
+        "email": "r.nasr@autolinx.com",
+        "photo": "src/images/aboutus/staff/rami_nasr.jpg",
+        "title": "Inventory Manager"
+      },
+      "a.santos": {
+        "firstName": "Adriana",
+        "lastName": "Santos",
+        "email": "a.santos@autolinx.com",
+        "photo": "src/images/aboutus/staff/adriana_santos.jpg",
+        "title": "Customer Service Representative",
+        "note": "I'm here to help! Please feel free to give me a call anytime."
+      }
+    }
+  }
+}

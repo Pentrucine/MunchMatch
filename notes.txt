@@ -1,0 +1,23 @@
+Full Hacks Ideas:
+
+MunchMatch
+
+A service that matches users with their ideal munching spots.
+Helps you choose where you and your co-workers (or friends) should go eat…. - Yelp or any review Dataset - Search by category and food ethnicity - take location - trending reviews
+
+    	- Google Maps (range based search)
+
+    	- Ai / ML integration …?
+    	-  Doordash integration?
+
+    	- Database
+      -Local JSON or Azure Cosmos?
+
+For demo purposes, the app should directly lead to a page with a
+bunch of mock “coworkers” and what they want to eat that day. The
+user has 2 options, either specify what they are eating that day, or
+jump onto a coworkers order. They will be given recommendations based
+on previous patterns and local behavior.
+
+
+- Home page: List of local resteraunts, list of co-workers, map of local resteraunts.

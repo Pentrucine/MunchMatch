@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> meta/head title="MunchMatch - What we eattin'?" }}
+  </head>
+
+  <body>
+    {{> navbar/navbar logo="/assets/images/logo/logo-light.png" class="navbar-sticky navbar-dark" }}
+
+    <div class="offcanvas-wrap">
+      <!-- Hero -->
+      <section class="bg-black inverted overflow-hidden">
+        <div class="container py-20 d-flex flex-column min-vh-100 foreground">
+          <div class="row my-auto justify-content-center">
+            <div class="text-center p-2">
+              <div class="grouped-inputs mb-2 border p-1 rounded-pill">
+                <div class="row">
+                  <div class="col">
+                    <input class="form-control form-control-lg px-4" type="text" placeholder="Start munchin'..." />
+                  </div>
+                  <div class="col-auto">
+                    <a class="btn btn-primary btn-lg btn-icon rounded-circle search-bar-button"><i class="bi bi-search"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 mb-2 d-grid">
+                  <a class="btn btn-primary btn-lg btn-with-icon rounded-pill" href="/munch" role="button"> Search Munchables<i class="bi bi-search"></i> </a>
+                </div>
+                <div class="col-lg-6 mb-2 d-grid">
+                  <a class="btn btn-secondary btn-lg btn-with-icon rounded-pill" href="/munch" type="button"> Join MunchBunch<i class="bi bi-people"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <figure class="background background-overlay background-parallax" style="background-image: url('/assets/images/background.png');" data-bottom-top="transform: translateY(0%);" data-top-bottom="transform: translateY(30%);"></figure>
+        <span class="scroll-down"></span>
+      </section>
+
+      <!-- footer -->
+      {{> footer/footer-1 logo="/assets/images/logo/logo.png" class="py-5 py-xl-10 bg-black inverted border-top" }}
+    </div>
+
+    <!-- javascript -->
+    {{> meta/scripts}}
+  </body>
+</html>

@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "username": "a.jay",
+      "firstname": "Adam",
+      "lastname": "Jay",
+      "status": "online",
+      "match": "21237104"
+    },
+    {
+      "username": "e.wattson",
+      "firstname": "Emily",
+      "lastname": "Wattson",
+      "status": "online",
+      "match": "837151"
+    },
+    {
+      "username": "j.appleseed",
+      "firstname": "John",
+      "lastname": "Appleseed",
+      "status": "offline"
+    },
+    {
+      "username": "l.smith",
+      "firstname": "Linsey",
+      "lastname": "Smith",
+      "status": "online",
+      "match": "422624"
+    },
+    {
+      "username": "m.trevor",
+      "firstname": "Mary",
+      "lastname": "Trevor",
+      "status": "online",
+      "match": "15641097"
+    },
+    {
+      "username": "s.avery",
+      "firstname": "Sandra",
+      "lastname": "Avery",
+      "status": "online",
+      "match": "837151"
+    },
+    {
+      "username": "s.evans",
+      "firstname": "Sarah",
+      "lastname": "Evans",
+      "status": "online",
+      "match": "14067302"
+    },
+    {
+      "username": "v.emerson",
+      "firstname": "Vanessa",
+      "lastname": "Emerson",
+      "status": "online",
+      "match": "21237104"
+    }
+  ]
+}
